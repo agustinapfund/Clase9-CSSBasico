@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+header p.header-descuento {
+  background-color: #1cd1b0;
+  border: 1px;
+  padding: 10px;
+  font-size: 15px;
+}
+h2 {
+  background-color: #00669f;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: normal;
+}
+section {
+  display: flex;
+}
+.tarjeta {
+  border-sizing: border-box;
+  margin: 20px 30px 10px 30px;
+  background-color: #f3f3f3;
+  position: relative;
+  width: 300px;
+  height: 600px;
+  border-radius: 10%;
+  text-align: center;
+}
+.img-perfil {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  top: 130px;
+  left: 90px;
+}
+.img-fondo {
+  width: 300px;
+  height: 194px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+H3 {
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  margin: 60px;
+}
+.textotarjeta {
+  text-align: justify;
+  width: 250px;
+  margin: 25px;
+}
+i {
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  top: 9px;
+  left: 5px;
+}
+a {
+  background-color: #00669f;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
