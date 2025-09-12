@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Heroes</title>
+  </head>
+  <body>
+    <header>
+      <p class="header-descuento">Descuentos 20%</p>
+      <h1>Heroes</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Registrarme</a></li>
+          <li><a href="#">Ingresar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="hoja-formulario">
+      <section class="formulario">
+        <h2>Añadi tu super!</h2>
+        <p class="texto-form">
+          Agregá tu personaje favorito completando las opciones.
+        </p>
+
+        <form action="" method="get">
+          <div class="dos-columnas">
+            <div class="columna">
+              <label for="nombre">*Nombre</label>
+              <input type="text" id="nombre" name="nombre" />
+              <label for="fecha">Fecha</label>
+              <input
+                type="date"
+                name="fecha"
+                id="fecha"
+                value="AAAA-MM-DD"
+                min="2010-01-01"
+                max="2030-12-31"
+              />
+              <input
+                class="descripcion"
+                type="textarea"
+                placeholder="Descripción"
+              />
+            </div>
+            <div class="columna">
+              <label for="especie">*Especie</label>
+              <select name="especie" id="especie" placeholder="Especie">
+                <option value="especie" disabled selected>Especie</option>
+                <option value="alien">Alien</option>
+                <option value="mutante">Mutante</option>
+                <option value="humano">Humano</option>
+                <option value="metahumano">Metahumano</option>
+              </select>
+              <label for="avatar">Agregar foto</label>
+              <input type="file" name="avatar" id="avatar" />
+              <label for="poder">Poderes</label>
+              <label class="poder" for="poder"
+                ><input type="checkbox" name="poder" value="volar" id="poder" />
+                Volar</label
+              >
+              <label class="poder" for="poder"
+                ><input
+                  type="checkbox"
+                  name="poder"
+                  value="superinteligencia"
+                  id="poder"
+                />
+                Superinteligencia</label
+              >
+              <label class="poder" for="poder"
+                ><input
+                  type="checkbox"
+                  name="poder"
+                  value="vista-de-rayos-laser"
+                  id="poder"
+                />
+                Vista de rayos laser</label
+              >
+              <label class="poder" for="poder"
+                ><input
+                  type="checkbox"
+                  name="poder"
+                  value="billetera-gorda"
+                  id="poder"
+                />
+                Billetera gorda</label
+              >
+              <hr />
+              <label for="personaje">Tipo de personaje</label>
+              <label for="personaje"
+                ><input
+                  type="radio"
+                  name="personaje"
+                  value="heroe/heroina"
+                  id="personaje"
+                />
+                Heroe/Heroina</label
+              >
+              <label for="personaje"
+                ><input
+                  type="radio"
+                  name="personaje"
+                  value="villano/villana"
+                  id="personaje"
+                />
+                Villano/Villana</label
+              >
+            </div>
+          </div>
+          <button type="submit">Añadir</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados a FRONT END 1</p>
+      <div class="git-logo">
+        <i class="fa-brands fa-git"></i>
+      </div>
+    </footer>
+  </body>
+</html>

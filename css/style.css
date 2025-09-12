@@ -2,7 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   font-family: roboto, sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.añadir {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 25px;
+}
+.añadir i {
+  color: white;
+  background-color: #00669f;
+  padding: 5px;
+  border-radius: 100%;
+  padding: 15px;
+  width: 100%;
+}
+.añadir i:hover {
+  background-color: #001d2d;
 }
 header {
   position: sticky;
@@ -15,62 +40,199 @@ header p.header-descuento {
   padding: 10px;
   font-size: 15px;
 }
-h2 {
+header h1 {
   background-color: #00669f;
   padding: 30px;
   font-size: 40px;
   font-weight: normal;
 }
+header nav {
+  background-color: #001d2d;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  margin-right: 10px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+/*Tarjetas la pagina*/
 section {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 .tarjeta {
-  border-sizing: border-box;
-  margin: 20px 30px 10px 30px;
+  box-sizing: border-box;
   background-color: #f3f3f3;
   position: relative;
-  width: 300px;
-  height: 600px;
+  width: 100%;
+  max-width: 300px;
+  max-height: 720px;
   border-radius: 10%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 .img-perfil {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  max-height: 120px;
   border-radius: 100%;
-  top: 130px;
-  left: 90px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  object-fit: cover;
 }
 .img-fondo {
-  width: 300px;
-  height: 194px;
+  width: 100%;
+  height: 100%;
+  min-width: 300px;
+  min-height: 194px;
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
+  object-fit: cover;
 }
 
 H3 {
   font-weight: normal;
   font-size: 30px;
   text-align: center;
-  margin: 60px;
+  margin-top: 80px;
 }
 .textotarjeta {
   text-align: justify;
-  width: 250px;
   margin: 25px;
 }
-i {
+main section article div i {
   position: absolute;
   color: red;
   font-size: 30px;
   top: 9px;
   left: 5px;
 }
-a {
+main section article div a {
   background-color: #00669f;
-  padding: 20px;
+  padding: 15px;
   color: white;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  margin-bottom: 3%;
+}
+footer {
+  background-color: #00669f;
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding: 1%;
+}
+footer i {
+  display: flex;
+  padding-left: 90px;
+  font-size: 30px;
+  align-items: center;
+}
+/*formmulario*/
+.hoja-formulario {
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #00669f;
+  border-radius: 30px;
+  padding: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h2 {
+  color: white;
+  font-size: 40px;
+}
+main section .texto-form {
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+.dos-columnas {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.formulario label {
+  color: white;
+  font-size: 20px;
+}
+.columna {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 343px;
+  width: 100%;
+}
+.columna input {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.columna select {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.descripcion {
+  color: gray;
+  height: 100%;
+  min-width: 343px;
+  min-height: 307px;
+  width: 100%;
+}
+label.poder {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  gap: 5px;
+}
+button {
+  background-color: #1cd1b0;
+  color: #000000;
+  border-radius: 20px;
+  font-size: 40px;
+  padding: 20px;
+  border: none;
+  text-align: center;
+  width: 100%;
+  max-width: 460px;
+  height: 100%;
+  max-height: 87px;
+  margin-top: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+}
+button:hover {
+  background-color: #001d2d;
+  color: white;
 }
