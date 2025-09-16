@@ -236,7 +236,7 @@ button:hover {
   background-color: #001d2d;
   color: white;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1400) {
   .container-añadir {
     position: relative;
   }
@@ -257,7 +257,7 @@ button:hover {
     width: 100%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 500) {
   footer {
     flex-direction: column;
     align-items: center;
@@ -266,7 +266,7 @@ button:hover {
     padding: 0px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 300) {
   header nav ul {
     flex-direction: column;
     gap: 0px;
