@@ -236,3 +236,45 @@ button:hover {
   background-color: #001d2d;
   color: white;
 }
+@media (max-width: 1400px) {
+  .container-añadir {
+    position: relative;
+  }
+  .añadir {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 50vh;
+    right: 5px;
+  }
+  .añadir i {
+    color: white;
+    background-color: #00669f;
+    padding: 5px;
+    border-radius: 100%;
+    padding: 15px;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer i {
+    padding: 0px;
+  }
+}
+@media (max-width: 300px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 0px;
+  }
+  header p.header-descuento {
+    width: 100vw;
+  }
+  header h1 {
+    width: 100vw;
+  }
+}
