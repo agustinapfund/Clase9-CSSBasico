@@ -9,7 +9,7 @@ body {
 main {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .añadir {
@@ -17,16 +17,18 @@ main {
   justify-content: flex-end;
   align-items: center;
   margin-left: 25px;
-}
-.añadir i {
-  color: white;
+  text-decoration: none;
   background-color: #00669f;
-  padding: 5px;
   border-radius: 100%;
   padding: 15px;
-  width: 100%;
+  width: 44px;
 }
-.añadir i:hover {
+.añadir::before {
+  font: var(--fa-font-solid);
+  content: "\2b";
+  color: white;
+}
+.añadir:hover {
   background-color: #001d2d;
 }
 header {
@@ -50,17 +52,24 @@ header nav {
   background-color: #001d2d;
   display: flex;
   justify-content: flex-end;
+  padding: 5px;
 }
 header nav ul {
   list-style-type: none;
   display: flex;
   gap: 30px;
-  padding: 10px;
   margin-right: 10px;
+}
+header nav ul li {
+  padding-top: 5px;
 }
 header nav ul li a {
   color: white;
   text-decoration: none;
+}
+header nav li:hover {
+  /*color: red;*/
+  background-color: #3c77ec;
 }
 /*Tarjetas la pagina*/
 section {
@@ -117,7 +126,9 @@ H3 {
   text-align: justify;
   margin: 25px;
 }
-main section article div i {
+main section article div #corazon1::before {
+  font: var(--fa-font-solid);
+  content: "\f004";
   position: absolute;
   color: red;
   font-size: 30px;
@@ -139,7 +150,10 @@ footer {
   justify-content: center;
   padding: 1%;
 }
-footer i {
+
+.git-logo::before {
+  font: var(--fa-font-brands);
+  content: "\f09b";
   display: flex;
   padding-left: 90px;
   font-size: 30px;
@@ -245,7 +259,7 @@ button:hover {
     top: 50vh;
     right: 5px;
   }
-  .añadir i {
+  .añadir::before {
     color: white;
     background-color: #00669f;
     padding: 5px;
@@ -267,7 +281,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
   }
-  footer i {
+  .git-logo::before {
     padding: 0px;
   }
 }
