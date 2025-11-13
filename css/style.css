@@ -21,7 +21,6 @@ main {
   background-color: #00669f;
   border-radius: 100%;
   padding: 15px;
-  width: 44px;
 }
 .añadir::before {
   font: var(--fa-font-solid);
@@ -262,10 +261,7 @@ button:hover {
   .añadir::before {
     color: white;
     background-color: #00669f;
-    padding: 5px;
     border-radius: 100%;
-    padding: 15px;
-    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -282,7 +278,7 @@ button:hover {
     align-items: center;
   }
   .git-logo::before {
-    padding: 0px;
+    padding: 5px;
   }
 }
 @media (max-width: 300px) {
